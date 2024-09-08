@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "eat some pinapple",
+      "isFav": false
+    },
+    {
+      "id": 2,
+      "title": "eat some apple",
+      "isFav": false
+    },
+    {
+      "id": 3,
+      "title": "eat some banana",
+      "isFav": true
+    },
+    {
+      "id": 4,
+      "title": "eat some orange",
+      "isFav": false
+    },
+    {
+      "id": 5,
+      "title": "eat some mango",
+      "isFav": true
+    },
+    {
+      "id": 6,
+      "title": "eat some watermelon",
+      "isFav": false
+    },
+    {
+      "id": 172,
+      "title": "Taking break",
+      "isFav": false
+    }
+  ]
+}

@@ -7,11 +7,14 @@
       <div class="">
         <i
           class="fa-solid fa-trash p-2 hover:bg-rose-200 rounded-lg cursor-pointer text-gray-500 hover:text-rose-600"
+          @click="taskStore.deleteTask(task.id)"
         ></i>
       </div>
       <div class="icon">
         <i
           class="fa-solid fa-heart p-2 hover:bg-cyan-200 rounded-lg cursor-pointer text-gray-500 hover:text-cyan-600"
+          :class="{ 'text-rose-600': task.isFav }"
+          @click="taskStore.toggleFav(task.id)"
         ></i>
       </div>
     </div>
@@ -20,6 +23,7 @@
 
 <script setup>
 import { defineProps } from "vue";
+import { useTaskStore } from "../stores/taskStore";
 
 // Define props using defineProps function
 const props = defineProps({
@@ -28,6 +32,7 @@ const props = defineProps({
     required: true,
   },
 });
+const taskStore = useTaskStore();
 </script>
 
 <style scoped></style>
